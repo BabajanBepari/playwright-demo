@@ -12,7 +12,7 @@ const user2 = 'USER'
 const user3 = 'NOUSER'
 
 // .only runs only the specified suite, can be used with test ... test.only()...
-test.describe.only('TEST SUITE 05 - Login Tests - VERSION 05 - Full Reusable Tests', () => {
+test.describe('TEST SUITE 05 - Login Tests - VERSION 05 - Full Reusable Tests', () => {
 
   test.beforeEach(async ({ page }, testInfo) => {
     await common.RunBefore({ page }, testInfo);
