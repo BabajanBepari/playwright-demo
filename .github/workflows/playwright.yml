@@ -5,7 +5,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-22.04   # Use a stable Ubuntu runner
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout code
@@ -20,7 +20,7 @@ jobs:
       run: npm install
 
     - name: Install Playwright Browsers
-      run: npx playwright install
+      run: npx playwright install --with-deps
 
     - name: Run Playwright Tests
       run: npx playwright test --reporter=html
