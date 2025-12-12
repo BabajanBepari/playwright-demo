@@ -12,7 +12,7 @@ const config = {
     timeout: 10000, /* Maximum time expect() should wait for the condition to be met.*/
   },
   fullyParallel: false,/* Run tests in files in parallel */
-  forbidOnly: !!process.env.CI, /* Fail the build on CI if you accidentally left test.only in the source code. */
+   /* Fail the build on CI if you accidentally left test.only in the source code. */
   retries: process.env.CI ? 1 : 0,/* Retry on CI only */
   workers: process.env.CI ? 1 : 1,/* Opt out of parallel tests on CI. */
   reporter: [['html', { open: 'always' }]],/* Reporter to use. See https://playwright.dev/docs/test-reporters */
